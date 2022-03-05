@@ -1,0 +1,28 @@
+/* Universal CSS*/
+:root {
+    --primary-color: #D5D5CC;
+    --secondary-color: #AFB7A0;
+    --tertiary-color: #969d7d;
+    --quaternary-color: #6E755A;
+    --quinary-color: #bd815d;
+}
+
+/*Header*/
+header {
+    background-color: var(--quaternary-color);
+    padding: auto;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 9999;
+    border-radius: 15px;
+    align-items: right;
+}
+
+header h2 {
+    margin: 15px;
+}
+
+body {
+    background-color: var(--secondary-color);
+    align-items: center;
+}
