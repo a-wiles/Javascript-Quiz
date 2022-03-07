@@ -141,8 +141,4 @@ function startQuiz () {
 //          highScores.sort((a, b) => b.score - a.score);
 //          highScores.splice(number_high_score);
 //          localStorage.setItem(high_score, JSON.stringify(highScores));
-<<<<<<< HEAD
 //    };
-=======
-//    };
->>>>>>> 69aab30c5f8df193087a9bdfde55a7ca7fda1a4b
