@@ -56,6 +56,12 @@ var questionsEl = document.getElementById("question");
 var optionsEl = document.getElementById("options");
 var buttonE1 = document.getElementById("start-button");
 
+//high Scores arrays
+var number_high_score = 3;
+var high_score = 'highScores';
+var highScoreString = localStorage.getItem(high_score);
+var highScores = JSON.parse(highScoreString) ?? [];
+
 
 //Start functions Event Listener
 document.getElementById("start-button").addEventListener("click", startQuiz);
@@ -97,8 +103,8 @@ function answerCheck () {
 //If you run out of time or you answer all questions, triggers for local storage.
 function quizOver () {
     alert("Your quiz is over!");
-    window.prompt("Enter Intials Here for high score!")
-    localStorage.setItem(time);
+    //saveHighScore();
+        localStorage.setItem(JSON.stringify(time));
 }
 
 
@@ -125,3 +131,14 @@ function startQuiz () {
     optionsEl.textContent = "";
     promptOptions ();
 };
+
+//high scores function
+
+//    function saveHighScore(score, highScores) {
+//      var initials = prompt('You got a highscore! Enter initials:');
+//      var newScore = { score, initials };
+//          highScores.push(newScore);
+//          highScores.sort((a, b) => b.score - a.score);
+//          highScores.splice(number_high_score);
+//          localStorage.setItem(high_score, JSON.stringify(highScores));
+//    };
