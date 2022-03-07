@@ -10,23 +10,24 @@
 
 <body>
     <header>
-        <h2>Timer: 
-            <div class="timer"></div>
+        <h2>Timer:</h2>
+            <h4><span id="countdown"></span></h4>
         </h2>
 
     </header>
-    <div class="welcome">
+    <div id="welcome" class="welcome">
         <h1>Welcome to JavaScript Fundamental Quiz!</h1>
             <p>Attempt to answer each JavaScript related question within the time limit. Every answer wrong will deduct 20 seconds from your timer!</p>
-            <button id="startquiz">Press Here to Start Quiz</button>
+            <div id= "buttons">
+                <button  id= "start-button">Press here to Start Quiz</button>
+              </div>
     </div>
 
-    <div id="quiz">
+        <div id="quiz">
+            <div id="question"></div>
+            <div id="options"></div>
+        </div>
 
-    <div id="results"></div>
-
-
-
-<link rel="js" href="./Assets/js.js">
+<script type="text/javascript" src="./Assets/js.js"></script>
 </body>
 </html>

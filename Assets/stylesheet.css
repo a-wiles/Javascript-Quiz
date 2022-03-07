@@ -24,5 +24,12 @@ header h2 {
 
 body {
     background-color: var(--secondary-color);
-    align-items: center;
+    justify-content: space-around;
+    position: center;
+}
+
+.welcome {
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
 }
